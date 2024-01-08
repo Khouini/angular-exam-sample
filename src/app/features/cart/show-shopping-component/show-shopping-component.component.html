@@ -1,0 +1,9 @@
+<h2>Shopping Cart</h2>
+<div>
+  <fieldset *ngFor="let product of productServiceService.cartData">
+    <legend>Product: {{ product.id }}</legend>
+    <p><strong>Name:</strong> {{ product.name }}</p>
+    <p><strong>Price:</strong> {{ product.price }}</p>
+    <p><strong>Description:</strong> {{ product.description }}</p>
+  </fieldset>
+</div>

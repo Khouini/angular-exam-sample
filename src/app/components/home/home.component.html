@@ -1,0 +1,16 @@
+<div>
+  <fieldset *ngFor="let product of productServiceService.data">
+    <legend>Product: {{ product.id }}</legend>
+    <!-- <p><strong>Name:</strong> {{ product.name }}</p> -->
+    <p><strong>Price:</strong> {{ product.price }}</p>
+    <!-- <p><strong>Description:</strong> {{ product.description }}</p> -->
+    <button (click)="buy(product)">Buy</button>
+    <button (click)="details(product)">Details</button>
+    <button (click)="display(product)">Display</button>
+  </fieldset>
+</div>
+
+<app-product-details
+  *ngIf="selectedProduct"
+  [product]="selectedProduct"
+></app-product-details>

@@ -54,4 +54,4 @@ export class ProductServiceService {
   fetchProductById(id: Number) {
     return this._http.get<Product[]>(this.apiUrl + '/' + id);
   }
-}
+} 

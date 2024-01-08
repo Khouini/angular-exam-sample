@@ -1,0 +1,20 @@
+{
+  "randannees": [
+    {
+      "id": 1,
+      "title": "Hiking Adventure",
+      "description": "Explore the scenic beauty of nature through a thrilling hiking experience.",
+      "price": 49.99,
+      "date": "2024-01-15",
+      "nbPlaces": 20
+    },
+    {
+      "id": 2,
+      "title": "Mountain Biking Excursion",
+      "description": "Ride through challenging terrains and enjoy the adrenaline rush of mountain biking.",
+      "price": 69.99,
+      "date": "2024-02-01",
+      "nbPlaces": 15
+    }
+  ]
+}

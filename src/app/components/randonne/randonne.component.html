@@ -1,0 +1,15 @@
+<h1>Nos randonnées</h1>
+<div>
+  <div *ngFor="let item of data">
+    <p>{{ item.title }}</p>
+    <button (click)="showDetails(item.id)">Details</button>
+    <div *ngIf="selectedRandonnee?.id == item?.id">
+      <fieldset>
+        <legend>Randonnée: {{ item.id }}</legend>
+        <p><strong>Title:</strong> {{ item.title }}</p>
+        <p><strong>Description:</strong> {{ item.description }}</p>
+      </fieldset>
+      <app-reservation></app-reservation>
+    </div>
+  </div>
+</div>
